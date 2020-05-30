@@ -1,0 +1,8 @@
+#containers {
+    border-radius: 10px 10px 0px 0px;
+}
+
+.head-1 {
+    padding: 10px;
+    border-left: 4px solid red;
+}

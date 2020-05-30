@@ -1,0 +1,73 @@
+<!-- navbar -->
+
+<nav class="navbar navbar-expand-lg navbar-light bg-danger">
+    <div class="container-fluid">
+        <div>
+            <a
+                class="navbar-brand animate__animated animate__pulse animate__repeat-3"
+                routerLink="/covid"
+                >C<img
+                    src="../../assets/img/icons8-coronavirus-50.png"
+                    class="rotate"
+                />VID-19</a
+            >
+        </div>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/advice"
+                        >Advice for public
+                        <span class="sr-only">(current)</span></a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/Myth_busters"
+                        >Myth busters</a
+                    >
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" routerLink="/what-to-do" href="#"
+                        >What to Do</a
+                    >
+                </li>
+                <li class="nav-item active">
+                    <a class="nav-link" routerLink="/contact_dev">Hire Me!</a>
+                </li>
+            </ul>
+
+            <div id="b">
+                <button
+                    mat-raised-button
+                    *ngIf="!auth.isLoggedIn()"
+                    class="btn btn-primary btn-round"
+                    id="btn_login"
+                    routerLink="/login"
+                >
+                    Login
+                </button>
+                <span class="dropdown" *ngIf="auth.isLoggedIn()" id="logout">
+                    <button
+                        class="dropdown-toggle btn btn-primary btn-round"
+                        data-toggle="dropdown"
+                    >
+                        {{ logedUser }} <b class="caret"></b>
+                    </button>
+                    <ul
+                        class="dropdown-menu dropdown-primary dropdown-menu-right"
+                    >
+                        <li class="dropdown-header">
+                            What you want to do?
+                        </li>
+                        <li>
+                            <a routerLink="/contactUs">Contact Us</a>
+                        </li>
+                        <li>
+                            <a routerLink="/resource">Resources Used</a>
+                        </li>
+                        <li><a (click)="auth.logout()">Logout</a></li>
+                    </ul>
+                </span>
+            </div>
+        </div>
+    </div>
+</nav>

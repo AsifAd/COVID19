@@ -1,0 +1,28 @@
+.button {
+    text-align: center;
+}
+button {
+    padding: 10px 60px;
+    margin: 40px;
+}
+
+button:hover {
+    box-shadow: 0 88px 88px 0 rgba(0, 0, 0, 1);
+    transform: scale(1.1);
+}
+.card {
+    box-shadow: 0 88px 88px 0 rgba(0, 0, 0, 0.2);
+}
+
+h2 {
+    box-shadow: 0 88px 88px 0 rgba(0, 0, 0, 0.2);
+    font-size: 40px;
+}
+
+.card:hover {
+    transform: scale(1.01);
+}
+hr.hr_line {
+    margin-bottom: 15px;
+    border-top: 2px solid white;
+}

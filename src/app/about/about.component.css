@@ -1,0 +1,26 @@
+#btn {
+    float: right;
+    padding: 10px 50px;
+    box-shadow: 2px 2px 2px 2px rgba(255, 255, 255, 0.5);
+}
+.card {
+    margin: 98px 0;
+    box-shadow: 0 88px 88px 0 rgba(0, 0, 0, 0.2);
+    /* height: 100vh; */
+}
+input:hover {
+    transform: scale(1.05);
+}
+h3:hover {
+    /* text-decoration: underline white; */
+    color: dodgerblue;
+    transform: scale(1.02);
+}
+#logout-btn {
+    float: right;
+}
+
+button:hover {
+    box-shadow: 0 20px 60px 0 rgba(0, 0, 0, 0.4);
+    transform: scale(1.1);
+}

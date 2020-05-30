@@ -1,0 +1,14 @@
+#side-pic {
+    max-width: 100%;
+    max-height: 100%;
+}
+/* img {
+    background-color: #fff;
+} */
+
+#linkedin {
+    padding: 5px 40px !important;
+}
+.all {
+    text-decoration: line-through;
+}

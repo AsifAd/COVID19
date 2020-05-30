@@ -1,0 +1,119 @@
+<div class="container">
+    <div class="row">
+        <div
+            class="col-12 main_header animate__animated animate__flipInX animate__slower"
+        >
+            <h1>
+                Coronavirus and C<img
+                    src="../../assets/img/icons8-coronavirus-64.png"
+                    class="rotate"
+                />VID-19:
+            </h1>
+            <h2>
+                <span>What You Should Know</span>
+            </h2>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-12">
+            <div class="card" data-aos="fade-up" data-aos-duration="1000">
+                <div class="card-header card-header-icon card-header-rose">
+                    <div class="card-icon">
+                        <h4>What Is COVID-19?</h4>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5>
+                        A <span class="h3 text-danger"> coronavirus</span>
+                        is a kind of common virus that causes an infection in
+                        your nose, sinuses, or upper throat. Most coronaviruses
+                        aren't dangerous. In early 2020, after a December 2019
+                        outbreak in China, the World Health Organization
+                        identified SARS-CoV-2 as a new type of coronavirus. The
+                        outbreak quickly spread around the world. COVID-19 is a
+                        disease caused by SARS-CoV-2 that can trigger what
+                        doctors call a respiratory tract infection. It can
+                        affect your upper respiratory tract (sinuses, nose, and
+                        throat) or lower respiratory tract (windpipe and lungs).
+                        It spreads the same way other coronaviruses do, mainly
+                        through person-to-person contact. Infections range from
+                        mild to deadly. SARS-CoV-2 is one of seven types of
+                        coronavirus, including the ones that cause severe
+                        diseases like Middle East respiratory syndrome (MERS)
+                        and sudden acute respiratory syndrome (SARS). The other
+                        coronaviruses cause most of the colds that affect us
+                        during the year but aren’t a serious threat for
+                        otherwise healthy people.
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- 2nd card -->
+    <div class="row">
+        <div class="col-md-6 col-12">
+            <div class="card h-100" data-aos="zoom-in-up">
+                <div class="card-header card-header-icon card-header-danger">
+                    <div class="card-icon">
+                        <h4>Is there more than one strain of SARS-CoV-2?</h4>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5>
+                        It’s normal for a virus to change, or mutate, as it
+                        infects people. A Chinese study of 103 COVID-19 cases
+                        suggests the virus that causes it has done just that.
+                        They found two strains, which they named L and S. The S
+                        type is older, but the L type was more common in early
+                        stages of the outbreak. They think one may cause more
+                        cases of the disease than the other, but they’re still
+                        working on what it all means.
+                    </h5>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-6 col-12">
+            <div class="card h-100" data-aos="zoom-in-up">
+                <div class="card-header card-header-icon card-header-primary">
+                    <div class="card-icon">
+                        <h4>How long will the coronavirus last?</h4>
+                    </div>
+                </div>
+                <div class="card-body">
+                    <h5>
+                        It’s too soon to tell how long the pandemic will
+                        continue. It depends on many things, including
+                        researchers’ work to learn more about the virus, their
+                        search for a treatment and a vaccine, and the public’s
+                        efforts to slow the spread. <br /><br />
+                        More than 100 vaccine candidates are in various stages
+                        of development and testing. This process usually takes
+                        years. Researchers are speeding it up as much as they
+                        can, but it still might take 12 to 18 months to find a
+                        vaccine that works and is safe
+                    </h5>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- read more card -->
+    <div
+        class="card read_more"
+        *ngIf="!auth.isLoggedIn()"
+        data-aos="zoom-in-up"
+    >
+        <div class="card-header card-header-icon card-header-rose">
+            <div class="card-icon">
+                <h4>Wanna Read More?</h4>
+            </div>
+        </div>
+        <div class="card-body">
+            <h5>
+                Access all the COVID-19 related information
+                <span class="h3 text-danger" routerLink="/login"> Login</span>
+                here to continue...
+            </h5>
+        </div>
+    </div>
+</div>

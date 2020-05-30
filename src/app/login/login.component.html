@@ -1,0 +1,195 @@
+<div class="container-fluid">
+    <div class="row text-white">
+        <div
+            class="col-md-8 col-12 bg-dark animate__animated animate__fadeInLeft animate__slow"
+        >
+            <h2 class="animate__animated animate__fadeInDown animate__slow">
+                <span class="heading">
+                    <span class="text-danger">COVID-19</span> Login Page</span
+                >
+            </h2>
+            <p class="animate__animated animate__fadeInDown animate__slow">
+                Signin to discover and connect with the global community from
+                here to access all
+                <span class="text-danger">COVID-19</span> related infomation.
+            </p>
+        </div>
+        <div
+            class="col-md-4 animate__animated animate__fadeInRight animate__slow"
+        >
+            <div class="login-form">
+                <form [formGroup]="loginForm" (ngSubmit)="login()">
+                    <!-- Name field -->
+                    <h2
+                        class="header text-dark animate__animated animate__fadeInDown animate__slow"
+                    >
+                        Login
+                    </h2>
+                    <div class="form-group">
+                        <mat-form-field
+                            class="example-full-width animate__animated animate__fadeInDown animate__slow"
+                        >
+                            <input
+                                matInput
+                                type="text"
+                                placeholder="User name"
+                                formControlName="userName"
+                                [class.is-invalid]="
+                                    userName.invalid && userName.touched
+                                "
+                                class="form-control form-control-alternative"
+                            />
+                        </mat-form-field>
+                        <p
+                            [class.d-none]="
+                                userName.valid || userName.untouched
+                            "
+                            class="text-danger"
+                        >
+                            User name required
+                        </p>
+                    </div>
+
+                    <!-- password field -->
+                    <div class="form-group">
+                        <mat-form-field
+                            class="example-full-width animate__animated animate__fadeInDown animate__slow"
+                        >
+                            <input
+                                matInput
+                                type="password"
+                                placeholder="Password"
+                                formControlName="password"
+                                [class.is-invalid]="
+                                    password.invalid && password.touched
+                                "
+                                class="form-control form-control-alternative text-dark"
+                            />
+                        </mat-form-field>
+                        <div *ngIf="password.invalid && password.touched">
+                            <p
+                                *ngIf="password.errors?.required"
+                                class="text-danger"
+                            >
+                                user name required
+                            </p>
+                            <p
+                                *ngIf="password.errors?.minlength"
+                                class="text-danger"
+                            >
+                                password must be of 4 chars
+                            </p>
+                        </div>
+                    </div>
+
+                    <!-- login button -->
+                    <button
+                        type="submit"
+                        mat-raised-button
+                        class="btn btn-primary"
+                        id="btn-1"
+                        [disabled]="loginForm.invalid"
+                    >
+                        Login
+                    </button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<!-- <div class="container-fluid">
+    <div class="row">
+        <div class="col-8">
+            <div class="sidenav bg-dark">
+                <div class="login-main-text">
+                    <h2>
+                        Application<br />
+                        Login Page
+                    </h2>
+                    <p>Login or register from here to access.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</div> -->
+<!-- <div class="sidenav bg-dark">
+    <div class="login-main-text">
+        <h2>
+            Application<br />
+            Login Page
+        </h2>
+        <p>Login or register from here to access.</p>
+    </div>
+</div> -->
+
+<!-- <div class="main">
+    <div class="col-md-6 col-sm-12">
+        <div class="login-form">
+            <form [formGroup]="loginForm" (ngSubmit)="login()"> -->
+<!-- Name field -->
+<!-- <h2 class="header">Login</h2>
+                <div class="form-group">
+                    <input
+                        type="text"
+                        placeholder="User name"
+                        formControlName="userName"
+                        [class.is-invalid]="
+                            userName.invalid && userName.touched
+                        "
+                        class="form-control form-control-alternative"
+                    />
+                    <p
+                        [class.d-none]="userName.valid || userName.untouched"
+                        class="text-danger"
+                    >
+                        User name required
+                    </p>
+                </div> -->
+
+<!-- password field -->
+<!-- <div class="form-group">
+                    <input
+                        type="password"
+                        placeholder="Password"
+                        formControlName="password"
+                        [class.is-invalid]="
+                            password.invalid && password.touched
+                        "
+                        class="form-control form-control-alternative"
+                    />
+                    <div *ngIf="password.invalid && password.touched">
+                        <p
+                            *ngIf="password.errors?.required"
+                            class="text-danger"
+                        >
+                            user name required
+                        </p>
+                        <p
+                            *ngIf="password.errors?.minlength"
+                            class="text-danger"
+                        >
+                            password must be of 4 chars
+                        </p>
+                    </div>
+                </div> -->
+
+<!-- login button -->
+<!-- <button
+                    type="submit"
+                    class="btn btn-neutral"
+                    id="btn-1"
+                    [disabled]="loginForm.invalid"
+                >
+                    Login
+                </button>
+            </form>
+        </div>
+    </div>
+</div> -->
+<!-- </form>
+            </div>
+        </div>
+    </div>
+</div> -->

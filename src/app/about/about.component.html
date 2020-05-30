@@ -1,0 +1,90 @@
+<div class="container">
+    <div class="row">
+        <div class="col"></div>
+        <div class="col-10 py-2">
+            <!-- Forms Starts -->
+            <form [formGroup]="aboutForm">
+                <div
+                    class="card h-100 text-white bg-default animate__animated animate__zoomIn animate__slower"
+                >
+                    <div class="card-body">
+                        <!-- Heading -->
+                        <h3 class="card-title text-danger display-2">
+                            Contact Us
+                        </h3>
+                        <div class="row">
+                            <div class="col-6">
+                                <!-- First Name -->
+                                <div class="card-text">
+                                    <input
+                                        type="text"
+                                        placeholder="First Name"
+                                        formControlName="firstName"
+                                        class="form-control form-control-alternative"
+                                    />
+                                </div>
+
+                                <!-- Last Name -->
+                                <div class="card-text my-3">
+                                    <input
+                                        type="text"
+                                        placeholder="Last Name"
+                                        formControlName="lastName"
+                                        class="form-control form-control-alternative"
+                                    />
+                                </div>
+
+                                <!-- City -->
+                                <div class="card-text">
+                                    <input
+                                        type="text"
+                                        placeholder="City"
+                                        formControlName="City"
+                                        class="form-control form-control-alternative"
+                                    />
+                                </div>
+                            </div>
+                            <div class="col-6">
+                                <!-- Email -->
+                                <div class="card-text">
+                                    <input
+                                        type="text"
+                                        placeholder="Email"
+                                        formControlName="Email"
+                                        class="form-control form-control-alternative"
+                                    />
+                                </div>
+
+                                <!-- phone -->
+                                <div class="card-text my-3">
+                                    <input
+                                        type="text"
+                                        placeholder="Phone"
+                                        formControlName="Phone"
+                                        class="form-control form-control-alternative"
+                                    />
+                                </div>
+                            </div>
+                        </div>
+
+                        <!--submit button -->
+                        <button
+                            mat-raised-button
+                            class="btn btn-danger"
+                            id="btn"
+                            href="#"
+                        >
+                            Submit
+                        </button>
+                    </div>
+                </div>
+            </form>
+        </div>
+        <div class="col"></div>
+    </div>
+
+    <!-- Back Button -->
+    <button class="btn btn-danger px-4" mat-raised-button routerLink="/covid">
+        back
+    </button>
+</div>

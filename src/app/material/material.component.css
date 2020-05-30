@@ -1,0 +1,64 @@
+.stepper {
+    border-radius: 8px;
+    background: #c2e59c; /* fallback for old browsers */
+    background: -webkit-linear-gradient(
+        to right,
+        #64b3f4,
+        #c2e59c
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #64b3f4,
+        #c2e59c
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}
+.mat-form-field {
+    margin-left: 20px;
+    width: 450px;
+}
+
+.NextButton,
+.BackButton {
+    margin: 10px;
+    padding: 5px 50px;
+    /* background-color: rgb(255, 255, 255);
+  color: black; */
+}
+.backToHomeBtn {
+    margin-top: 20px;
+    padding: 5px 50px;
+}
+
+.NextButton:hover,
+.BackButton:hover {
+    border-bottom: 2px solid white;
+}
+
+.backToHomeBtn:hover {
+    transform: scale(1.02);
+    border-bottom: 2px solid rgb(221, 12, 12);
+}
+input {
+    color: white;
+}
+.card-header {
+    font-size: large;
+
+    font-weight: 500;
+}
+.card-title {
+    font-size: larger;
+    font-weight: 400;
+}
+.mat-card {
+    background: -webkit-linear-gradient(
+        to right,
+        #64b3f4,
+        #c2e59c
+    ); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(
+        to right,
+        #64b3f4,
+        #c2e59c
+    ); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+}

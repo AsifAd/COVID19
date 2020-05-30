@@ -1,0 +1,39 @@
+.container-fluid {
+    height: 100vh !important;
+    /* padding-bottom: 500px; */
+}
+.col-md-8 {
+    min-height: 110vh !important;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+}
+.heading {
+    border-left: 4px solid red;
+    padding-left: 10px;
+}
+.header {
+    border-left: 4px solid red;
+    font-weight: bold;
+    padding-left: 10px;
+}
+
+.login-form {
+    padding-left: 20px;
+    margin-top: 270px;
+}
+.form-group {
+    margin: 0;
+    padding: 0;
+}
+.mat-form-field-appearance-legacy .mat-form-field-wrapper {
+    padding: 0 !important;
+}
+
+#btn-1 {
+    padding: 10px 50px;
+}
+span {
+    box-shadow: 0 88px 88px 0 rgba(0, 0, 0, 0.1);
+}

@@ -1,0 +1,31 @@
+.footer {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 0px;
+}
+.mat-card {
+    margin-top: 70px;
+    padding: 10px !important;
+    background: linear-gradient(60deg, #ab47bc, #8e24aa);
+}
+
+h2 {
+    margin: 0;
+    padding-bottom: 10px;
+}
+
+/* rotation code */
+.rotate {
+    animation: rotation 8s infinite linear;
+}
+
+@keyframes rotation {
+    from {
+        transform: rotate(0deg);
+    }
+    to {
+        transform: rotate(359deg);
+    }
+}
+/* rotation code */
